@@ -533,9 +533,17 @@
     </div>
   </div>
 
+  <audio id="bg-music" loop>
+  <source src="HBD_Song.mp3" type="audio/mpeg">
+</audio>
+
 </div>
 
 <script>
+    document.addEventListener("click", () => {
+    const audio = document.getElementById("bg-music");
+    audio.play();
+  }, { once: true });
 /* ═══════════════════════════════
    STARS
 ═══════════════════════════════ */
